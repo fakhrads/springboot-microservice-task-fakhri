@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: bookdb-postgres
+    environment:
+      POSTGRES_DB: bookdb
+      POSTGRES_USER: fakhrads
+      POSTGRES_PASSWORD: inipasswordnya
+    ports:
+      - "5123:5123"
+
+volumes:
+  bookdb_data:
